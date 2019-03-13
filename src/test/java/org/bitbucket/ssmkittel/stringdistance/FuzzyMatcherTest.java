@@ -96,13 +96,15 @@ public class FuzzyMatcherTest
   @Test
   public void edgeMatch0()
   {
-    matcher.matches(Collections.emptyList(), 2);
+    List<Match> matches = matcher.matches(Collections.emptyList(), 2);
+    Assert.assertEquals(matches, Collections.emptyList(), "Matches");
   }
 
   @Test
   public void edgeMatch1()
   {
-    matcher.matches(Collections.singletonList("A"), 2);
+    List<Match> matches = matcher.matches(Collections.singletonList("A"), 2);
+    Assert.assertEquals(matches, Collections.emptyList(), "Matches");
   }
 
   @Test
@@ -117,13 +119,15 @@ public class FuzzyMatcherTest
   @Test
   public void edgeMatchEmpty0()
   {
-    matcherEmpty.matches(Collections.emptyList(), 2);
+    List<Match> matches = matcherEmpty.matches(Collections.emptyList(), 2);
+    Assert.assertEquals(matches, Collections.emptyList(), "Matches");
   }
 
   @Test
   public void edgeMatchEmpty1()
   {
-    matcherEmpty.matches(Collections.singletonList("A"), 2);
+    List<Match> matches = matcherEmpty.matches(Collections.singletonList("A"), 2);
+    Assert.assertEquals(matches, Collections.emptyList(), "Matches");
   }
 
   @Test
