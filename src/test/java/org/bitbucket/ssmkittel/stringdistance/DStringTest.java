@@ -1,4 +1,4 @@
-package distance;
+package org.bitbucket.ssmkittel.stringdistance;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

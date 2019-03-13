@@ -1,4 +1,4 @@
-package distance;
+package org.bitbucket.ssmkittel.stringdistance;
 
 import it.unimi.dsi.fastutil.chars.Char2IntOpenHashMap;
 

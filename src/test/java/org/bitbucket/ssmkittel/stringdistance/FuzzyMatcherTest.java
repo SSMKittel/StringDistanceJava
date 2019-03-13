@@ -1,4 +1,4 @@
-package distance;
+package org.bitbucket.ssmkittel.stringdistance;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
